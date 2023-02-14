@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#28465B"
+    android:id="@+id/pantalla_lo">
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logologin"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="231dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="22dp"
+        android:text="Sácale el máximo partido a FlightScan|\ con la versión Premium!"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagen" />
+
+    <Button
+        android:id="@+id/IniciaSesion"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3B6FFF"
+        android:text="Inicia Sesión"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/IniciaSesion" />
+
+    <Button
+        android:id="@+id/NuevaCuenta"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#6C6A6A"
+        android:text="Nueva Cuenta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/IniciaSesion" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
