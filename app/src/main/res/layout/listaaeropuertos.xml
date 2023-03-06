@@ -8,14 +8,99 @@
     android:fillViewport="true"
     android:background="#134161">
 
+    <ImageView
+        android:id="@+id/volver"
+        android:layout_width="83dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/volver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="51dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="95dp"
         android:text="Aeropuertos más destacados"
         android:textColor="#FFFFFF"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/volver" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="36dp"
+        android:text="Y su información más relevante"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toStartOf="@+id/directo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/directo"
+        android:layout_width="60dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/directo"
+        android:text="   LIVE"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <TextView
+        android:id="@+id/info_aero"
+        android:layout_width="350dp"
+        android:layout_height="82dp"
+        android:background="@drawable/info_aero"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <TextView
+        android:id="@+id/info_aero2"
+        android:layout_width="350dp"
+        android:layout_height="82dp"
+        android:background="@drawable/info_aero"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <TextView
+        android:id="@+id/info_aero3"
+        android:layout_width="350dp"
+        android:layout_height="82dp"
+        android:background="@drawable/info_aero"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="366dp" />
+
+    <TextView
+        android:id="@+id/info_aero4"
+        android:layout_width="350dp"
+        android:layout_height="82dp"
+        android:background="@drawable/info_aero"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="476dp" />
+
+    <TextView
+        android:id="@+id/info_aero5"
+        android:layout_width="350dp"
+        android:layout_height="82dp"
+        android:background="@drawable/info_aero"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="585dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
