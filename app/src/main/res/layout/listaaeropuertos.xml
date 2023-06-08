@@ -66,41 +66,136 @@
     <TextView
         android:id="@+id/info_aero"
         android:layout_width="350dp"
-        android:layout_height="82dp"
+        android:layout_height="100dp"
+        android:text="      1.Aeropuerto de Barcelona"
+        android:textColor="#000000"
+        android:textSize="18sp"
         android:background="@drawable/info_aero"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="152dp" />
+        tools:layout_editor_absoluteY="152dp"
+        tools:ignore="MissingConstraints"/>
+
+
+    <ImageView
+        android:layout_width="87dp"
+        android:layout_height="69dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:src="@drawable/BCN_air"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="167dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/info_aero2"
         android:layout_width="350dp"
-        android:layout_height="82dp"
+        android:layout_height="100dp"
+        android:text="    2. Aeropuerto Paris Charles de Gaulle"
+        android:textColor="#000000"
+        android:textSize="18sp"
         android:background="@drawable/info_aero"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="259dp" />
+        tools:layout_editor_absoluteY="259dp"
+        tools:ignore="MissingConstraints"/>
+
+
+    <ImageView
+        android:layout_width="87dp"
+        android:layout_height="69dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:src="@drawable/Paris_Air"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="282dp" />
 
     <TextView
         android:id="@+id/info_aero3"
         android:layout_width="350dp"
-        android:layout_height="82dp"
+        android:layout_height="100dp"
+        android:text="     3. Casablanca International Airport"
+        android:textColor="#000000"
+        android:textSize="18sp"
         android:background="@drawable/info_aero"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="366dp" />
+        tools:layout_editor_absoluteY="366dp"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:layout_width="87dp"
+        android:layout_height="69dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:src="@drawable/casablanca_air"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="388dp" />
+
+    <ImageView
+        android:layout_width="87dp"
+        android:layout_height="69dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:src="@drawable/Paris_Air"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="282dp" />
 
     <TextView
         android:id="@+id/info_aero4"
         android:layout_width="350dp"
-        android:layout_height="82dp"
+        android:layout_height="100dp"
+        android:text="     4. Prague Vaclav Havel Airport"
+        android:textColor="#000000"
+        android:textSize="18sp"
         android:background="@drawable/info_aero"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="476dp" />
+        tools:layout_editor_absoluteY="476dp"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:layout_width="87dp"
+        android:layout_height="69dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:src="@drawable/Prague_air"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="498dp" />
 
     <TextView
         android:id="@+id/info_aero5"
         android:layout_width="350dp"
-        android:layout_height="82dp"
+        android:layout_height="100dp"
+        android:text="      6. Rome Fiumicino Airport"
+        android:textColor="#000000"
+        android:textSize="20sp"
         android:background="@drawable/info_aero"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="585dp" />
+        tools:layout_editor_absoluteY="585dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/info_aero6"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:text="     5. London Heathrow Airport"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:background="@drawable/info_aero"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="585dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="87dp"
+        android:layout_height="69dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:src="@drawable/london_air"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="605dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
