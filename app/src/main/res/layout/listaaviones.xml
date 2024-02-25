@@ -8,99 +8,18 @@
     android:fillViewport="true"
     android:background="#134161">
 
-    <ImageView
-        android:id="@+id/volver"
-        android:layout_width="83dp"
-        android:layout_height="35dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/volver"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="505dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:clipToPadding="false"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Rastrea los aviones más cercanos"
-        android:textColor="#FFFFFF"
-        android:textSize="22sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/volver" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="36dp"
-        android:text="Información actualizada cada 7 segundos"
-        android:textColor="#FFFFFF"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toStartOf="@+id/directo"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <TextView
-        android:id="@+id/directo"
-        android:layout_width="60dp"
-        android:layout_height="24dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="35dp"
-        android:background="@drawable/directo"
-        android:text="   LIVE"
-        android:textColor="#FFFFFF"
-        android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="103dp" />
-
-    <TextView
-        android:id="@+id/info_aero"
-        android:layout_width="350dp"
-        android:layout_height="100dp"
-        android:background="@drawable/info_aero"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="152dp" />
-
-    <TextView
-        android:id="@+id/info_aero2"
-        android:layout_width="350dp"
-        android:layout_height="100dp"
-        android:background="@drawable/info_aero"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="259dp" />
-
-    <TextView
-        android:id="@+id/info_aero3"
-        android:layout_width="350dp"
-        android:layout_height="100dp"
-        android:background="@drawable/info_aero"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="366dp" />
-
-    <TextView
-        android:id="@+id/info_aero4"
-        android:layout_width="350dp"
-        android:layout_height="100dp"
-        android:background="@drawable/info_aero"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="476dp" />
-
-    <TextView
-        android:id="@+id/info_aero5"
-        android:layout_width="350dp"
-        android:layout_height="100dp"
-        android:background="@drawable/info_aero"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="585dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

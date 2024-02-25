@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/login_f">
+
+    <fragment
+        android:id="@+id/login_f"
+        android:name="com.example.aplicacion_dani.Login_f"
+        android:label="fragment_login_f"
+        tools:layout="@layout/fragment_login_f" />
+    <fragment
+        android:id="@+id/aviones_list"
+        android:name="com.example.aplicacion_dani.Aviones_list"
+        android:label="fragment_aviones_list"
+        tools:layout="@layout/fragment_aviones_list" />
+    <fragment
+        android:id="@+id/aeropuertos_list"
+        android:name="com.example.aplicacion_dani.Aeropuertos_list"
+        android:label="fragment_aeropuertos_list"
+        tools:layout="@layout/fragment_aeropuertos_list" />
+    <fragment
+        android:id="@+id/maps"
+        android:name="com.example.aplicacion_dani.Maps"
+        android:label="fragment_maps2"
+        tools:layout="@layout/fragment_maps2" />
+</navigation>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -25,6 +26,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:text="Aeropuertos más destacados"
         android:textColor="#FFFFFF"
@@ -36,30 +38,14 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="36dp"
         android:text="Y su información más relevante"
         android:textColor="#FFFFFF"
         android:textSize="17sp"
-        app:layout_constraintEnd_toStartOf="@+id/directo"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <TextView
-        android:id="@+id/directo"
-        android:layout_width="60dp"
-        android:layout_height="24dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="64dp"
-        android:background="@drawable/directo"
-        android:text="   LIVE"
-        android:textColor="#FFFFFF"
-        android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="103dp" />
 
     <TextView
         android:id="@+id/info_aero"
@@ -67,7 +53,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/info_aero"
-        android:text="      1.Aeropuerto de Barcelona"
+        android:text="     1.Aeropuerto de Barcelona"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,8 +68,12 @@
         android:layout_gravity="center"
         android:gravity="center_vertical"
         android:src="@drawable/bcn_air"
-        tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="167dp"
+        app:layout_constraintBottom_toBottomOf="@+id/info_aero"
+        app:layout_constraintEnd_toEndOf="@+id/info_aero"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="@+id/info_aero"
+        app:layout_constraintTop_toTopOf="@+id/info_aero"
+        app:layout_constraintVertical_bias="0.774"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -100,16 +90,6 @@
         app:layout_constraintTop_toBottomOf="@+id/info_aero"
         tools:ignore="MissingConstraints" />
 
-
-    <ImageView
-        android:layout_width="87dp"
-        android:layout_height="69dp"
-        android:layout_gravity="center"
-        android:gravity="center_vertical"
-        android:src="@drawable/paris_air"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="282dp" />
 
     <TextView
         android:id="@+id/info_aero3"
@@ -131,9 +111,13 @@
         android:layout_gravity="center"
         android:gravity="center_vertical"
         android:src="@drawable/casablanca_air"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="388dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/info_aero3"
+        app:layout_constraintEnd_toEndOf="@+id/info_aero3"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="@+id/info_aero3"
+        app:layout_constraintTop_toTopOf="@+id/info_aero3"
+        app:layout_constraintVertical_bias="0.709"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:layout_width="87dp"
@@ -141,9 +125,13 @@
         android:layout_gravity="center"
         android:gravity="center_vertical"
         android:src="@drawable/paris_air"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="282dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/info_aero2"
+        app:layout_constraintEnd_toEndOf="@+id/info_aero2"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="@+id/info_aero2"
+        app:layout_constraintTop_toTopOf="@+id/info_aero2"
+        app:layout_constraintVertical_bias="0.709"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/info_aero4"
@@ -165,9 +153,13 @@
         android:layout_gravity="center"
         android:gravity="center_vertical"
         android:src="@drawable/prague_air"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="498dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/info_aero4"
+        app:layout_constraintEnd_toEndOf="@+id/info_aero4"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="@+id/info_aero4"
+        app:layout_constraintTop_toTopOf="@+id/info_aero4"
+        app:layout_constraintVertical_bias="0.709"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/info_aero5"
@@ -203,9 +195,13 @@
         android:layout_gravity="center"
         android:gravity="center_vertical"
         android:src="@drawable/london_air"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="605dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/info_aero6"
+        app:layout_constraintEnd_toEndOf="@+id/info_aero6"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="@+id/info_aero6"
+        app:layout_constraintTop_toTopOf="@+id/info_aero6"
+        app:layout_constraintVertical_bias="0.677"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
