@@ -1,15 +1,14 @@
 package com.example.aplicacion_dani;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 
-import android.os.Bundle;
-
 import com.example.aplicacion_dani.databinding.ActivityMainBinding;
-import com.google.android.gms.maps.MapView;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
@@ -30,6 +29,6 @@ public class MainActivity extends AppCompatActivity {
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.mainLayout);
         navHostFragment.getNavController().setGraph(R.navigation.mobile_navigation);
 
-        navController.navigate(R.id.login_f);
+        navController.navigate(R.id.loginFragment);
     }
 }

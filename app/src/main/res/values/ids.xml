@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="margendelado" type="id" />
+    <item name="imagennoticias" type="id" />
+    <item name="tituloNoticia" type="id">tituloNoticia</item>
+</resources>

@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,9 +17,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Aviones_list extends Fragment {
-    ImageView volver;
     NavController navController;
-
+    private RecyclerView recyclerViewAvionesLista;
     private List<AvionItem> avionItemList;
     private AvionesAdapter avionesAdapter;
 
@@ -28,18 +26,6 @@ public class Aviones_list extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
-
-
-        volver = view.findViewById(R.id.volver);
-
-        volver.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navController.navigate(R.id.aeropuertos_list);
-
-            }
-        });
-
     }
 
 
@@ -50,17 +36,17 @@ public class Aviones_list extends Fragment {
 
         // Inicializa tu lista de datos (avionItemList)
         avionItemList = new ArrayList<>();
-        avionItemList.add(new AvionItem("PRG - JFK"));
-        avionItemList.add(new AvionItem("LHR - HKG"));
-        avionItemList.add(new AvionItem("FCO - CMN"));
-        avionItemList.add(new AvionItem("CMN - LHR"));
-        avionItemList.add(new AvionItem("BCN - CDG"));
+        avionItemList.add(new AvionItem("PRG - JFK", "11,800m", "660 KM/h", "BOEING 777-FFG", R.drawable.americanavion));
+        avionItemList.add(new AvionItem("LHR - HKG", "11,800m", "660 KM/h", "BOEING 777-FFG", R.drawable.britshavion));
+        avionItemList.add(new AvionItem("FCO - CMN", "11,800m", "660 KM/h", "BOEING 777-FFG", R.drawable.alitaliaavion));
+        avionItemList.add(new AvionItem("CMN - LHR", "11,800m", "660 KM/h", "BOEING 777-FFG", R.drawable.iberiaavion));
+        avionItemList.add(new AvionItem("BCN - CDG", "11,800m", "660 KM/h", "BOEING 777-FFG", R.drawable.vuelingavion));
 
         // Configura el RecyclerView
-        RecyclerView recyclerView = view.findViewById(R.id.recyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        avionesAdapter = new AvionesAdapter(avionItemList);
-        recyclerView.setAdapter(avionesAdapter);
+        recyclerViewAvionesLista = view.findViewById(R.id.recyclerViewListAviones);
+        recyclerViewAvionesLista.setLayoutManager(new LinearLayoutManager(getContext()));
+        avionesAdapter = new AvionesAdapter(avionItemList, navController);
+        recyclerViewAvionesLista.setAdapter(avionesAdapter);
 
         return view;
     }

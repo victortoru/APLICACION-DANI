@@ -6,49 +6,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:ignore="SpeakableTextPresentCheck"
     android:fillViewport="true"
-    android:background="#134161">
+    android:background="#134161"
+    tools:context=".NoticiasFragment">
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="371dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="25dp"
-        android:text="Rastrea los Aviones más cercanos"
+        android:layout_width="379dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="30dp"
+        android:text="Mantente al día de las noticias más recientes en nuestro canal exclusivo"
         android:textColor="@color/white"
-        android:textSize="28dp"
+        android:textSize="19dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/directo"
-        android:text="     LIVE"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/recyclerViewListAviones"
-        app:layout_constraintEnd_toEndOf="@+id/recyclerViewListAviones"
-        app:layout_constraintHorizontal_bias="0.954"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.098" />
-
-    <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="17dp"
         android:layout_marginTop="10dp"
-        android:text="Información actualizada cada 7 segundos"
+        android:text="Actualizaciones de Última Hora incluidas"
         android:textColor="@color/white"
-        android:textSize="18dp"
+        android:textSize="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewListAviones"
+        android:id="@+id/recyclerViewListAeropuertos"
         android:layout_width="match_parent"
         android:layout_height="614dp"
         android:layout_marginTop="10dp"
@@ -59,7 +48,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7" 
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
